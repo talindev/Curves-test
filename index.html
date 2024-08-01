@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curves!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="pink">
+  <h1>Nice Curves!</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Et iste cum eveniet, sapiente incidunt voluptatum nemo praesentium quidem natus obcaecati 
+    molestias maxime impedit aliquid qui similique atque blanditiis dolores animi.</p>
+    <div class="curve"></div>
+  </section>
+  <section class="blue">
+    <h1>Nice Curves!</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      Et iste cum eveniet, sapiente incidunt voluptatum nemo praesentium quidem natus obcaecati 
+      molestias maxime impedit aliquid qui similique atque blanditiis dolores animi.</p>
+      <div class="curve2"></div>
+  </section>
+  <section class="green">
+    <h1>Nice Curves!</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      Et iste cum eveniet, sapiente incidunt voluptatum nemo praesentium quidem natus obcaecati 
+      molestias maxime impedit aliquid qui similique atque blanditiis dolores animi.</p>
+      <div class="curve3"></div>
+  </section>
+  <section class="red">
+    <h1>Nice Curves!</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      Et iste cum eveniet, sapiente incidunt voluptatum nemo praesentium quidem natus obcaecati 
+      molestias maxime impedit aliquid qui similique atque blanditiis dolores animi.</p>
+      <div class="curve4"></div>
+  </section>
+  <section class="darkpink">
+    <h1>Nice Curves!</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      Et iste cum eveniet, sapiente incidunt voluptatum nemo praesentium quidem natus obcaecati 
+      molestias maxime impedit aliquid qui similique atque blanditiis dolores animi.</p>
+  </section>
+
+
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgb(16, 15, 44);
+        color: white;
+      }
+      
+      section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding: 150px 20vw;
+      }
+
+      .curve {
+        position: absolute;
+        height: 225px;
+        width: 100%;
+        bottom: 0;
+      }
+
+      .curve::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: darkslateblue;
+        transform: translate(85%, 60%);
+      }
+
+      .curve::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: lightcoral;
+        transform: translate(-4%, 40%);
+        z-index: 1;
+      }
+
+      .curve2 {
+        position: absolute;
+        height: 225px;
+        width: 100%;
+        bottom: 0;
+      }
+
+      .curve2::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: lightseagreen;
+        transform: translate(85%, 60%);
+      }
+
+      .curve2::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: darkslateblue;
+        transform: translate(-4%, 40%);
+        z-index: 1;
+      }
+
+      .curve3 {
+        position: absolute;
+        height: 225px;
+        width: 100%;
+        bottom: 0;
+      }
+
+      .curve3::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: lightsalmon;
+        transform: translate(85%, 60%);
+      }
+
+      .curve3::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: lightseagreen;
+        transform: translate(-4%, 40%);
+        z-index: 1;
+      }
+
+      .curve4 {
+        position: absolute;
+        height: 225px;
+        width: 100%;
+        bottom: 0;
+      }
+
+      .curve4::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: rgb(153, 53, 108);
+        transform: translate(85%, 60%);
+      }
+
+      .curve4::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: lightsalmon;
+        transform: translate(-4%, 40%);
+        z-index: 1;
+      }
+
+      .pink {
+        background-color: lightcoral;
+      }
+
+      .blue {
+        background-color: darkslateblue;
+      }
+
+      .green {
+        background-color: lightseagreen;
+      }
+
+      .red {
+        background-color: lightsalmon;
+      }
+
+      .darkpink {
+        background-color: rgb(153, 53, 108);
+      }
+    </style>
+</body>
+</html>
